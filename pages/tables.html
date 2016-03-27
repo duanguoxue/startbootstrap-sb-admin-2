@@ -1017,7 +1017,7 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="table-responsive">
-                                <table class="table table-hover">
+                                <table class="table table-hover" id="example2">
                                     <thead>
                                         <tr>
                                             <th>#</th>
@@ -1063,7 +1063,7 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="table-responsive">
-                                <table class="table">
+                                <table class="table" id="">
                                     <thead>
                                         <tr>
                                             <th>#</th>
@@ -1136,6 +1136,9 @@
     <script>
     $(document).ready(function() {
         $('#dataTables-example').DataTable({
+                responsive: true
+        });
+        $('#example2').DataTable({
                 responsive: true
         });
     });
